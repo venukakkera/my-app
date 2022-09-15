@@ -1,0 +1,62 @@
+<p>data-binding works!</p>
+
+
+<p> My age is {{ age }}</p>
+<p>My name is {{name}} </p>
+<p>From India: {{isIndian}}</p>
+
+<p *ngFor ="let phone of phones">{{ phone }}</p>
+<ul>
+    <li *ngFor="let course of courses">{{course}}</li>
+</ul>
+
+<p> My name is {{ user.name}}. I am from {{user.city}} </p>
+<p>name:{{ student.name}}</p>
+<p>id:{{ student.id}}</p>
+<p>marks:{{student.marks}}</p>
+
+<p>Employee Details:</p>
+<p>name:{{ employee.name}} </p>
+<p>company:{{ employee.company}} </p>
+<p>package:{{ employee.package}} </p>
+
+<p *ngFor="let user of users">
+   name:{{user.name}}
+   city:{{user.city}}
+
+</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let user of users">
+         <td> {{user.name}}</td>
+         <td>{{user.city}}</td>
+    </tr>
+</tbody>
+</table>
+
+<p>Student details:</p>
+<table border="1">
+   <thead>
+<tr>
+    <th>Name</th>
+    <th>Id</th>
+    <th>marks</th>
+</tr>
+   </thead>
+<tbody>
+<tr *ngFor="let student of students">
+    <td>{{ student.name}}</td>
+        <td>{{student.id}}</td>
+        <td>{{student.marks}}</td>
+
+</tr>
+
+</tbody>
+</table>

@@ -1,0 +1,78 @@
+
+<div class="parent">
+ <h3>Student Application-Form</h3>
+ <br>
+ <form action="">
+ <label>Firstname:</label>
+ <input type="text" [(ngModel)]="firstname">
+ <br><br>
+ <label>Lastname:</label>
+ <input type="text" [(ngModel)]="lastname">
+ <br>
+ <label>Gender:</label><br>
+ <input type="radio" id="male" name="gender" value="Male">
+ <label for="male">Male</label>
+ <br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label> 
+<br>
+<label>Age:</label>
+ <input type="number" [(ngModel)]="age">
+<br><br>
+ <label>Mobile:</label>
+ <input type="number" [(ngModel)]="mobile">
+ <br><br>
+ <label>Email:</label>
+ <input type="text" [(ngModel)]="email">
+ <br><br>
+ <label>Batch:</label>
+ <input type="number" [(ngModel)]="batch">
+ <br><br>
+ <label>Address:</label>
+ <input type="text" [(ngModel)]="address">
+ <input type="text" [(ngModel)]="address">
+ <br><br>
+ <label>Education:</label>
+ <input type="text" [(ngModel)]="education">
+ <input type="text" [(ngModel)]="education">
+ <br><br>
+
+ <button class="btn btn-success" (click)="register()">Register</button>
+
+</form>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Name:</th>
+            <th>Gender:</th>
+            <th>Age:</th>
+            <th>Mobile:</th>
+            <th>Email:</th>
+            <th>Batch:</th>
+            <th>Address:</th>
+            <th>Education:</th>
+        </tr>
+    </thead>
+ <tbody>
+    <tr *ngFor="let student of students,let i=index">
+        <td>{{ student.name }}</td>
+        <td>{{ student.gender}}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.mobile }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.batch }}</td>
+        <td>{{ student.address }}</td>
+        <td>{{ student.education}}</td>
+        <td><button class="btn btn-danger"(click)="delete(i)">delete</button></td>
+     </tr>
+ </tbody>
+</table>
+
+
+
+
+
+</div>
+
+

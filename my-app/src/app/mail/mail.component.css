@@ -1,0 +1,18 @@
+div{
+    height:40px;
+    width: 600px;
+    margin: 40px;
+    box-shadow: 20px;
+    background-color: whitesmoke;
+}
+.visited:hover{
+    font-weight: 700;
+    border: 1px solid gray;
+}
+.unvisited{
+    border: 1px solid gray;
+}
+label{
+    margin-left: 10px;
+    margin-right: 5px;
+}

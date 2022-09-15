@@ -1,0 +1,21 @@
+
+div{
+    background-color: whitesmoke;
+    margin: auto;
+}
+.row{
+     border: 20px;
+     margin: 20px;
+}
+.parent{
+    margin: 40px;
+}
+.child{
+   padding: 20px;
+}
+.container1{
+    background-color:blanchedalmond;
+    text-align: center;
+
+
+}

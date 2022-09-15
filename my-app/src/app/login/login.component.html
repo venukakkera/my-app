@@ -1,0 +1,19 @@
+
+   
+<div class="parent">
+    <form [formGroup]="loginForm">
+        <a href="WELCOME"> WELCOME </a><br>
+    <label>Username :</label>
+    <input type="text=username" formControlName="email":placeholder=Username><br>
+    <label>Password :</label>
+    <input type="Password" formControlName="password":placeholder=password>
+    <div class="error" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+        <p *ngIf="loginForm.get('password')?.errors?.['required']">password is required</p> 
+        <p *ngIf="loginForm.get('password')?.errors?.['pattern']">password should atleast one uppercase(A),one lowercase(a),one special charecter(@),one digit(1)</p> 
+        
+    </div>
+    <br>
+    <button class="btn btn-success" (click)="submit()">Login</button>
+
+</form>
+</div>

@@ -1,0 +1,55 @@
+
+
+<form [formGroup]="studentForm">
+
+<label >Name:</label>
+<input type="text" FormControlName="name">
+<br><br>
+<label>Roll No:</label>
+<input type="number" FormControlName="rollno">
+<br><br>
+<label>Age:</label>
+<input type="number" FormControlName="age">
+<br><br>
+<label>Phone:</label>
+<input type="number" FormControlName="phone">
+<br><br>
+<div formGroupName="address">
+<label >State:</label>
+<input type="text" FormControlName="state">
+<br><br>
+<label >Pincode:</label>
+<input type="text" FormControlName="pincode">
+<br><br>
+</div>
+
+<button (click)="add()">Add Hostel</button>
+<br>
+   <div formArrayName="hostels">
+    <div *ngFor="let hostel of hostelsFormArray.controls ,let i=index">
+        <div formGroupName="{{i}}">
+ <label>Room Number:</label>
+    <input type="text" formControlName="room number">
+<br>
+<label>Fees:</label>
+    <input type="text" formControlName="fees">
+<br>
+<label>:</label>
+    <input type="text" formControlName="">
+
+            <br>
+            <button (click)="remove(i)">Remove</button>
+        </div>
+    </div>
+   </div>
+
+<br>
+
+<button (click)="submit()">Submit</button>
+<br>
+
+
+
+
+
+</form>

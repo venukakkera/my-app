@@ -1,0 +1,14 @@
+
+form{
+    height: 650px;
+    width: 500px;
+    background-color:grey;
+    text-align: center;
+    color:aquamarine;
+
+};
+button{
+    text-align:center;
+    color:pink;
+    background-color: coral;
+}

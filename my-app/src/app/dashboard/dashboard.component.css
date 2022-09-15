@@ -1,0 +1,26 @@
+ 
+.parent{
+    width:100vw;
+    height:300vh;
+    display: flex;
+    background-color:linen;
+    text-indent: 05px;
+}
+.child1{
+    width:15%;
+    height:150%;
+    background-color:brown;
+    text-align: center;
+    text-indent: 5px;
+}
+.child2{
+    overflow:auto;
+    width: 90%;
+}
+h4{
+    color: black;
+}
+button{
+    color:pink;
+    background-color: coral;
+}
