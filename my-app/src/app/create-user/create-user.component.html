@@ -1,5 +1,5 @@
 
-
+<div class="container">
 <form [formGroup]="userForm">
 
     <label>Name:</label>
@@ -26,7 +26,7 @@
   <input type="number" formControlName="phone">
 
   <div class="error" *ngIf="userForm.get('phone')?.touched && userForm.get('phone')?.invalid" >
-    <p *ngIf="userForm.get('phone')?.errors?.['required']">Phone is required</p>
+    <p *ngIf="userForm.get('phone')?.errors?.['required']">Phone number is required</p>
     <p *ngIf="userForm.get('phone')?.errors?.['min']">Phone should contain min 10 numbers</p>
     <p *ngIf="userForm.get('phone')?.errors?.['max']">Phone should contain max 10 numbers</p>
   </div>
@@ -39,7 +39,7 @@
     <label >Pin:</label>
     <input type="number" formControlName="pin"> 
     <div class="error" *ngIf="userForm.get('address')?.get('pin')?.touched && userForm.get('address')?.get('pin')?.invalid" >
-        <p *ngIf="userForm.get('address')?.get('pin')?.errors?.['required']">Pin is required</p>
+        <p *ngIf="userForm.get('address')?.get('pin')?.errors?.['required']">Pin number is required</p>
         <p *ngIf="userForm.get('address')?.get('pin')?.errors?.['min']">Pin should be contain min 6 numbers</p>
         <p *ngIf="userForm.get('address')?.get('pin')?.errors?.['max']">Pin should be contain max 6 numbers</p>
     </div>
@@ -52,7 +52,7 @@
   <div *ngFor="let card of cardsFormArray.controls, let i= index">
     <div formGroupName="{{i}}"> 
 
-      <label>Number:</label>
+    <label>Number:</label>
     <input type="text" formControlName="number">
 <br>
 <label>Expiry:</label>
@@ -92,3 +92,4 @@
  <button class="btn btn-primary" (click)="submit()">Submit</button>
  <br>
 </form>
+</div>

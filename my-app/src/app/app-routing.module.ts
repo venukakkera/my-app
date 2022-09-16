@@ -7,6 +7,7 @@ import { AuthGuard } from './auth.guard';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
@@ -21,15 +22,19 @@ import { HospitalComponent } from './hospital/hospital.component';
 import { ItemComponent } from './item/item.component';
 import { LoginComponent } from './login/login.component';
 import { MailComponent } from './mail/mail.component';
+import { NavComponent } from './nav/nav.component';
 import { NotifyGuard } from './notify.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ParentComponent } from './parent/parent.component';
 import { PersonComponent } from './person/person.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PostComponent } from './post/post.component';
+import { ProductComponent } from './product/product.component';
 import { RectangilarComponent } from './rectangilar/rectangilar.component';
 import { SruareComponent } from './sruare/sruare.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
@@ -60,7 +65,12 @@ const routes: Routes = [
     {path:'applicationform',component:ApplicationFormComponent},
     {path:'create-vehicle',component:CreateVehicleComponent , canDeactivate:[NotifyGuard]},
     {path:'createuser',component:CreateUserComponent},
-    {path:'createstudent',component:CreateStudentComponent}
+    {path:'createstudent',component:CreateStudentComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'product',component:ProductComponent},
+    {path:'cartlist',component:CartlistComponent},
+    {path:'nav',component:NavComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent}
     
 ]},
   {path:'',component: LoginComponent},

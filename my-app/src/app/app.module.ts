@@ -38,6 +38,13 @@ import { ApplicationFormComponent } from './application-form/application-form.co
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { StarComponent } from './star/star.component';
+import { ProductComponent } from './product/product.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { NavComponent } from './nav/nav.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 @NgModule({
@@ -75,6 +82,13 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     CreateVehicleComponent,
     CreateUserComponent,
     CreateStudentComponent,
+    ParentComponent,
+    ChildComponent,
+    StarComponent,
+    ProductComponent,
+    CartlistComponent,
+    NavComponent,
+    VehicleDetailsComponent,
     
   ],
   imports: [
