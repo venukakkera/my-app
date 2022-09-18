@@ -1,15 +1,15 @@
 
-<div class="parent">
+<div class="topnav">
  <h3>Student Application-Form</h3>
  <br>
- <form action="">
  <label>Firstname:</label>
  <input type="text" [(ngModel)]="firstname">
- <br><br>
- <label>Lastname:</label>
+ <br>
+ <label>Lastname(surname):</label>
  <input type="text" [(ngModel)]="lastname">
  <br>
  <label>Gender:</label><br>
+
  <input type="radio" id="male" name="gender" value="Male">
  <label for="male">Male</label>
  <br>
@@ -30,21 +30,18 @@
  <br><br>
  <label>Address:</label>
  <input type="text" [(ngModel)]="address">
- <input type="text" [(ngModel)]="address">
  <br><br>
  <label>Education:</label>
  <input type="text" [(ngModel)]="education">
- <input type="text" [(ngModel)]="education">
  <br><br>
-
- <button class="btn btn-success" (click)="register()">Register</button>
-
-</form>
-
+ <button class="btn btn-success" (click)="add()">Register</button>
+<br>
+<br>
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>Name:</th>
+            <th>Firstame:</th>
+            <th>Lastname</th>
             <th>Gender:</th>
             <th>Age:</th>
             <th>Mobile:</th>
@@ -52,27 +49,24 @@
             <th>Batch:</th>
             <th>Address:</th>
             <th>Education:</th>
+            <th> Actions:</th>
         </tr>
     </thead>
  <tbody>
     <tr *ngFor="let student of students,let i=index">
-        <td>{{ student.name }}</td>
-        <td>{{ student.gender}}</td>
-        <td>{{ student.age }}</td>
+        <td>{{ student.firstname }}</td>
+        <td>{{ student.lastname }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.age |age }}</td> 
         <td>{{ student.mobile }}</td>
         <td>{{ student.email }}</td>
         <td>{{ student.batch }}</td>
         <td>{{ student.address }}</td>
         <td>{{ student.education}}</td>
-        <td><button class="btn btn-danger"(click)="delete(i)">delete</button></td>
+        <td><button class="btn btn-danger"(click)="delete(i)">Delete</button></td>
      </tr>
  </tbody>
 </table>
-
-
-
-
-
 </div>
 
 

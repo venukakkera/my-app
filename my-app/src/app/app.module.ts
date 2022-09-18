@@ -45,6 +45,7 @@ import { ProductComponent } from './product/product.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
 import { NavComponent } from './nav/nav.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 @NgModule({
@@ -96,7 +97,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

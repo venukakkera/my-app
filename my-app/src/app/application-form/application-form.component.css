@@ -1,14 +1,9 @@
 
-form{
-    height: 650px;
-    width: 500px;
-    background-color:grey;
+.topnav{
+    height: 35%;
+    width: 35%;
+    background-color:palegreen;
     text-align: center;
-    color:aquamarine;
+    color:brown;
 
-};
-button{
-    text-align:center;
-    color:pink;
-    background-color: coral;
 }

@@ -25,9 +25,9 @@ export class HospitalComponent implements OnInit {
     this.patients['push'](
       {
         'name':this.name,
-      'room':this.room,
-      'disease':this.disease,
-      'billamount':this.billamount
+        'room':this.room,
+    'disease' :this.disease,
+  'billamount':this.billamount
       }
     );
   }

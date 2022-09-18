@@ -25,17 +25,17 @@ export class ApplicationFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  register(){
+  add(){
     this.students['push'](
       {
       'firstname':this.firstname,
-      'lastname':this.lastname,
-      'gender':this.gender,
-      'age':this.age,  
-      'mobile':this.mobile,
-      'email':this.email,
-      'batch':this.batch,
-      'address':this.address,
+      'lastname' :this.lastname,
+      'gender'   :this.gender,
+      'age'      :this.age,  
+      'mobile'   :this.mobile,
+      'email'    :this.email,
+      'batch'    :this.batch,
+      'address'  :this.address,
       'education':this.education
     }  
  );

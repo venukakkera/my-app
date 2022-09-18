@@ -70,7 +70,11 @@ const routes: Routes = [
     {path:'product',component:ProductComponent},
     {path:'cartlist',component:CartlistComponent},
     {path:'nav',component:NavComponent},
-    {path:'vehicle-details/:id',component:VehicleDetailsComponent}
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    { path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule)
+  }
     
 ]},
   {path:'',component: LoginComponent},
